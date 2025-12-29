@@ -114,8 +114,8 @@ Based on VS Code Markdown Extended extension.
 
 ## Credits
 
-- **Original Extension**: JackDMF
-- **Repository**: https://github.com/JackDMF/vscode-markdown-extended
+- **Original Extension**: GhostOps77
+- **Repository**: https://github.com/GhostOps77/vscode-markdown-extended
 
 ---
 

@@ -2,8 +2,7 @@
 
 # Markdown Extended Pro
 
-[![version](https://img.shields.io/vscode-marketplace/v/jackdmf.markdown-extended-pro.svg?style=flat-square&label=vscode%20marketplace)](https://marketplace.visualstudio.com/items?itemName=jackdmf.markdown-extended-pro)
-[![installs](https://img.shields.io/vscode-marketplace/d/jackdmf.markdown-extended-pro.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=jackdmf.markdown-extended-pro)
+**Version:** 2.2.4
 
 Markdown Extended Pro is a comprehensive extension that extends syntaxes and abilities to VSCode's built-in markdown functionality.
 
@@ -231,7 +230,7 @@ Default Keyboard Shortcut bindings are removed due to conflict issues on platfor
 
 ![moveCols](./images/moveCols.gif)
 
-> Move columns key bindings has been changed to `ctrl+shift+t ctrl+shift+left/right`, due to [#57](https://github.com/JackDMF/vscode-markdown-extended/issues/57), [#68](https://github.com/JackDMF/vscode-markdown-extended/issues/68)
+> Move columns key bindings has been changed to `ctrl+shift+t ctrl+shift+left/right`, due to [#57](https://github.com/GhostOps77/vscode-markdown-extended/issues/57), [#68](https://github.com/GhostOps77/vscode-markdown-extended/issues/68)
 
 ### Paste as Markdown Table
 
@@ -430,4 +429,4 @@ Please post and view issues on [GitHub][issues]
 
 **Enjoy!**
 
-[issues]: https://github.com/JackDMF/vscode-markdown-extended/issues "Post issues"
+[issues]: https://github.com/GhostOps77/vscode-markdown-extended/issues "Post issues"
