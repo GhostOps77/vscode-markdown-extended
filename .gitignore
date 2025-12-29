@@ -4,3 +4,6 @@ node_modules
 */.DS_Store
 *.vsix
 .vscode-test
+dist/
+pnpm*
+package-lock.json
