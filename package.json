@@ -373,6 +373,7 @@
     },
     "markdown.markdownItPlugins": true,
     "markdown.previewStyles": [
+      "styles/markdown-extended.css",
       "styles/markdown-it-admonition.css",
       "styles/markdown-it-grouped-code-fence.css",
       "styles/markdown-it-kbd.css"

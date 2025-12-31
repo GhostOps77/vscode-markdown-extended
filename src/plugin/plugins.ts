@@ -58,8 +58,8 @@ const myPlugins: Record<string, any> = {
 }
 
 export const plugins: MarkdownItPlugin[] = [
-    // $('markdown-it-toc'),
-    // $('markdown-it-anchor'), // MarkdownItAnchorLink requires MarkdownItTOC
+    $('markdown-it-toc'),
+    $('markdown-it-anchor'), // MarkdownItAnchorLink requires MarkdownItTOC
     $('markdown-it-table-of-contents', { includeLevel: Config.instance.tocLevels }),
     $('markdown-it-container'),
     $('markdown-it-admonition'),
