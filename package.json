@@ -374,6 +374,7 @@
     "markdown.markdownItPlugins": true,
     "markdown.previewStyles": [
       "styles/markdown-it-admonition.css",
+      "styles/markdown-it-grouped-code-fence.css",
       "styles/markdown-it-kbd.css"
     ]
   },
@@ -422,6 +423,7 @@
     "markdown-it-deflist": "^3.0.0",
     "markdown-it-emoji": "^3.0.0",
     "markdown-it-footnote": "^4.0.0",
+    "markdown-it-grouped-code-fence": "github:GhostOps77/markdown-it-grouped-code-fence",
     "markdown-it-html5-embed": "^0.3.3",
     "markdown-it-ib": "^2.0.0",
     "markdown-it-kbd": "^2.2.2",

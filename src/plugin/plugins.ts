@@ -4,6 +4,7 @@ import { MarkdownItAnchorLink } from './markdownItAnchorLink';
 import { MarkdownItExportHelper } from './markdownItExportHelper';
 import { MarkdownItAdmonition } from './markdownItAdmonition';
 import { Config } from '../services/common/config';
+import { MarkdownItGroupedCodeFence } from './markdownItGroupedCodeFence';
 // eslint-disable-next-line @typescript-eslint/naming-convention
 import * as MarkdownItSidenote from './markdownItSidenote';
 import MarkdownIt from 'markdown-it';
@@ -36,6 +37,7 @@ const myPlugins: Record<string, any> = {
     'markdown-it-admonition': MarkdownItAdmonition,
     'markdown-it-anchor': MarkdownItAnchorLink,
     'markdown-it-helper': MarkdownItExportHelper,
+    'markdown-it-grouped-code-fence': MarkdownItGroupedCodeFence,
     'markdown-it-sidenote': MarkdownItSidenote.default,
     // External plugins - now statically imported for bundling
     'markdown-it-footnote': markdownItFootnote,
@@ -76,7 +78,8 @@ export const plugins: MarkdownItPlugin[] = [
     $('markdown-it-html5-embed', { html5embed: { useImageSyntax: true, useLinkSyntax: true } }),
     $('markdown-it-sidenote'),
     $('markdown-it-helper'),
-    $('markdown-it-bracketed-spans')
+    $('markdown-it-bracketed-spans'),
+    $('markdown-it-grouped-code-fence')
 ].filter(p => !!p);
 
 function $(name: string, ...args: any[]): MarkdownItPlugin | undefined {

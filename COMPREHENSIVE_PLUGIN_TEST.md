@@ -90,6 +90,20 @@ This is **bold**{.red}
 
 Press [[Ctrl]]+[[Alt]]+[[Delete]]
 
+## 14. Grouped Code blocks (markdown-it-grouped-code-fence)
+
+```ruby [printA]
+puts 'A'
+```
+
+```python [printA-python3]
+print('A')
+```
+
+```javascript [printB]
+console.log('B')
+```
+
 ---
 
 ## Expected Results
@@ -107,3 +121,4 @@ All of the above should render correctly:
 - ✅ Containers styled
 - ✅ TOC generated
 - ✅ Keyboard keys styled
+- ✅ Adjacent code blocks are grouped together and toggleable

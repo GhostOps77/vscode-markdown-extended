@@ -1,0 +1,76 @@
+.grouped-code-fence-container {
+  margin: 1.2rem 0;
+  border: 1px solid var(--vscode-widget-border);
+  border-radius: .5rem;
+  overflow: hidden;
+
+  pre {
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.grouped-code-fence-navigation-bar {
+  user-select: none;
+  white-space: nowrap;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  li {
+    height: 100%;
+    padding: 0 0.75em;
+    position: relative;
+    list-style-type: none;
+
+    :hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    ~ li::before {
+      content: " ";
+
+      width: 2px;
+      height: 1rem;
+      margin: 0;
+      padding: 0;
+      border: 0;
+
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      background-color: var(--vscode-textCodeBlock-background);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.grouped-code-fence-fence-radio {
+  display: none;
+
+  &:not(:checked) + pre {
+    display: none;
+  }
+}
+
+.grouped-code-fence-label-radio {
+  display: none;
+
+  & + label {
+    transition-duration: .15s;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+
+    line-height: 2.5rem;
+    opacity: 0.4;
+  }
+
+  &:checked + label {
+    opacity: 1;
+  }
+}

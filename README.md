@@ -89,6 +89,7 @@ Integrated markdown-it plugins:
 - [markdown-it-html5-embed](https://www.npmjs.com/package/markdown-it-html5-embed) - Embed media
 - [markdown-it-container](https://www.npmjs.com/package/markdown-it-container) - Custom containers
 - [markdown-it-bracketed-spans](https://www.npmjs.com/package/markdown-it-bracketed-spans) - Span syntax
+- [markdown-it-grouped-code-fence](https://github.com/GhostOps77/markdown-it-grouped-code-fence) - Combines multiple code blocks into a single group of tabbed code block
 
 > Post an issue on [GitHub][issues] if you want other plugins.
 
@@ -100,7 +101,7 @@ To disable integrated plugins, add their names (comma-separated, without `markdo
 "markdownExtended.disabledPlugins": "ib, emoji, bracketed-spans"
 ```
 
-**Available plugin names:** `table-of-contents`, `container`, `admonition`, `footnote`, `abbr`, `sup-alt`, `sub-alt`, `checkbox`, `attrs`, `kbd`, `ib`, `mark`, `deflist`, `emoji`, `multimd-table`, `html5-embed`, `sidenote`, `bracketed-spans`, `helper`
+**Available plugin names:** `table-of-contents`, `container`, `admonition`, `footnote`, `abbr`, `sup-alt`, `sub-alt`, `checkbox`, `attrs`, `kbd`, `ib`, `mark`, `deflist`, `emoji`, `multimd-table`, `html5-embed`, `sidenote`, `bracketed-spans`, `helper`, `grouped-code-fence`
 
 ## Architecture & Development
 
@@ -422,6 +423,25 @@ _Rendered with Bootstrap styles. To see the same result, add this config:_
     "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 ]
 ```
+
+### markdown-it-grouped-code-fence
+
+Use keywords to distinguish between different groups
+~~~
+```ruby [printA]
+  puts 'A'
+```
+
+```python [printA-python3]
+  print('A')
+```
+
+```javascript [printB]
+  console.log('B')
+```
+~~~
+
+![grouped-code-fence-demo.gif](./images/grouped-code-fence-demo.gif)
 
 ## Known Issues & Feedback
 
