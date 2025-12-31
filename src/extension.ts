@@ -4,7 +4,7 @@
 import * as vscode from 'vscode';
 import { CommandExportCurrent } from './commands/exportCurrent';
 import { CommandInstallBrowser } from './commands/installBrowser';
-import * as markdowIt from './@types/markdown-it';
+import MarkdownIt from 'markdown-it';
 import { plugins } from './plugin/plugins';
 import { CommandCopy, CommandCopyWithStyles } from './commands/copy';
 import { Config } from './services/common/config';
@@ -19,7 +19,7 @@ import { BrowserManager } from './services/browser/browserManager';
 
 // Deprecated: Use ExtensionContext.current.markdown instead
 // @deprecated
-export let markdown: markdowIt.MarkdownIt;
+export let markdown: MarkdownIt;
 // Deprecated: Use ExtensionContext.current.vsContext instead
 // @deprecated
 export let context: vscode.ExtensionContext;
@@ -56,7 +56,7 @@ export function activate(ctx: vscode.ExtensionContext) {
     
     ctx.subscriptions.push(...subscriptions);
     return {
-        extendMarkdownIt(md: markdowIt.MarkdownIt) {
+        extendMarkdownIt(md: MarkdownIt) {
             // Filter out null/undefined plugins and add error handling
             plugins
                 .filter(p => p && typeof p.plugin === 'function')

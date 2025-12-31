@@ -10,10 +10,9 @@
         "sourceMap": true,
         "rootDir": ".",
         "typeRoots": [
-            "node_modules/@types",
-            "src/@types"
+            "node_modules/@types"
         ],
-        
+
         // Gradual strict mode - enable more as code improves
         "strict": false,
         "noImplicitAny": false,

@@ -1,4 +1,4 @@
-import { MarkdownIt } from '../@types/markdown-it';
+import MarkdownIt from 'markdown-it';
 // Use default import for CommonJS module
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import container = require('markdown-it-container');

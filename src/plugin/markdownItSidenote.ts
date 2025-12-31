@@ -1,4 +1,4 @@
-import { MarkdownIt } from 'markdown-it';
+import MarkdownIt from 'markdown-it';
 
 /**
  * Markdown-it plugin for sidenotes, marginal notes, and sidebar annotations.

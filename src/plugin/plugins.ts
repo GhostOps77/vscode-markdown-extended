@@ -6,7 +6,7 @@ import { MarkdownItAdmonition } from './markdownItAdmonition';
 import { Config } from '../services/common/config';
 // eslint-disable-next-line @typescript-eslint/naming-convention
 import * as MarkdownItSidenote from './markdownItSidenote';
-import { MarkdownIt } from '../@types/markdown-it';
+import MarkdownIt from 'markdown-it';
 
 // Import all external markdown-it plugins statically for bundling
 import markdownItFootnote from 'markdown-it-footnote';

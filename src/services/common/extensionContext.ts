@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import * as markdownIt from '../../@types/markdown-it';
+import MarkdownIt from 'markdown-it';
 
 /**
  * Centralized extension context and state management.
@@ -17,7 +17,7 @@ import * as markdownIt from '../../@types/markdown-it';
  */
 export class ExtensionContext {
     private static _instance?: ExtensionContext;
-    private _markdown?: markdownIt.MarkdownIt;
+    private _markdown?: MarkdownIt;
     private _vsContext?: vscode.ExtensionContext;
     private _outputPanel: vscode.OutputChannel;
 
@@ -71,7 +71,7 @@ export class ExtensionContext {
      * @returns The markdown-it instance
      * @throws Error if markdown engine not initialized
      */
-    get markdown(): markdownIt.MarkdownIt {
+    get markdown(): MarkdownIt {
         if (!this._markdown) {
             throw new Error('Markdown engine not initialized. Call setMarkdown() first.');
         }
@@ -91,7 +91,7 @@ export class ExtensionContext {
      * 
      * @param md The markdown-it instance
      */
-    setMarkdown(md: markdownIt.MarkdownIt): void {
+    setMarkdown(md: MarkdownIt): void {
         if (this._markdown) {
             this._outputPanel.appendLine('[WARNING] Markdown engine already initialized, replacing...');
         }

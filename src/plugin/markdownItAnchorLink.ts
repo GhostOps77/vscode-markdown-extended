@@ -1,4 +1,4 @@
-import { MarkdownIt } from '../@types/markdown-it';
+import MarkdownIt from 'markdown-it';
 import { slugify } from './shared';
 
 /** Regular expression to match markdown anchor links like [text](#anchor) */
