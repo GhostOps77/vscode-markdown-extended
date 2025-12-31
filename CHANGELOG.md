@@ -1,5 +1,16 @@
 # Change Log
 
+## v2.2.4 - Added new plugin - markdown-it-grouped-code-fence
+
+### 📝 Changes
+
+- Removed hardcoded `markdown-it` types and using `@types/markdown-it` package instead.
+- Added [markdown-it-grouped-code-fence](https://github.com/GhostOps77/markdown-it-grouped-code-fence) plugin.
+  - Groups adjacent code blocks into a singular tabbed code block.
+  - Refer to it's [docs](https://github.com/GhostOps77/markdown-it-grouped-code-fence).
+
+---
+
 ## v2.2.3 - Critical Bug Fix: Extension Host Crash
 
 ### 🐛 Bug Fixes

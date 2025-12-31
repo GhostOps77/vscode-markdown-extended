@@ -576,4 +576,4 @@ For questions or suggestions, please open an issue on GitHub.
 
 **Document Version:** 1.0  
 **Last Updated:** November 7, 2025  
-**Extension Version:** 2.0.0
+**Extension Version:** 2.2.4
