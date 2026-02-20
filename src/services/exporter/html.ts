@@ -3,7 +3,8 @@ import { promises as fsPromises } from 'fs';
 import { mkdirsAsync } from '../common/tools';
 import * as path from 'path';
 import { renderPage } from './shared';
-import { MarkdownExporter, ExportFormat, Progress, ExportItem } from './interfaces';
+import type { Progress, ExportItem } from './interfaces';
+import { MarkdownExporter, ExportFormat } from './interfaces';
 import { ErrorHandler, ErrorSeverity } from '../common/errorHandler';
 
 /**

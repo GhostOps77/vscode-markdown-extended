@@ -1,8 +1,8 @@
-import MarkdownIt, { StateCore } from 'markdown-it'
+import type MarkdownIt from 'markdown-it'
+import type { StateCore } from 'markdown-it'
 
-import { Config, TokenInfo } from 'markdown-it-grouped-code-fence/dist/types'
 import { TokenCollector } from 'markdown-it-grouped-code-fence/dist/TokenCollector'
-import { RULE_NAME } from 'markdown-it-grouped-code-fence/dist/types'
+import { RULE_NAME, Config, TokenInfo } from 'markdown-it-grouped-code-fence/dist/types'
 
 
 export function MarkdownItGroupedCodeFence(md: MarkdownIt): void {

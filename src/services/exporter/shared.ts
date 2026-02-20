@@ -3,7 +3,7 @@ import * as path from 'path';
 import { ExtensionContext } from '../common/extensionContext';
 import { MarkdownDocument } from '../common/markdownDocument';
 import { Contributes } from '../contributes/contributes';
-import { MarkdownItEnv } from '../common/interfaces';
+import type { MarkdownItEnv } from '../common/interfaces';
 
 /**
  * Escape HTML special characters to prevent XSS

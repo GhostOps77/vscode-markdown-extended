@@ -1,5 +1,6 @@
-import MarkdownIt, { Token } from 'markdown-it';
-import { MarkdownItEnv, HtmlExporterEnv } from '../services/common/interfaces';
+import type MarkdownIt from 'markdown-it';
+import type { Token } from 'markdown-it';
+import type { MarkdownItEnv, HtmlExporterEnv } from '../services/common/interfaces';
 import * as path from 'path';
 import * as fs from 'fs';
 import { fileToDataUri } from '../services/common/dataUri';

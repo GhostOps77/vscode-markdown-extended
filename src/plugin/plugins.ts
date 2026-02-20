@@ -1,13 +1,15 @@
+import type MarkdownIt from 'markdown-it';
+
+import { Config } from '../services/common/config';
+
 import { MarkdownItTOC } from './markdownItTOC';
 import { MarkdownItContainer } from './markdownItContainer';
 import { MarkdownItAnchorLink } from './markdownItAnchorLink';
 import { MarkdownItExportHelper } from './markdownItExportHelper';
 import { MarkdownItAdmonition } from './markdownItAdmonition';
-import { Config } from '../services/common/config';
 import { MarkdownItGroupedCodeFence } from './markdownItGroupedCodeFence';
 // eslint-disable-next-line @typescript-eslint/naming-convention
 import * as MarkdownItSidenote from './markdownItSidenote';
-import MarkdownIt from 'markdown-it';
 
 // Import all external markdown-it plugins statically for bundling
 import markdownItFootnote from 'markdown-it-footnote';
@@ -83,9 +85,7 @@ export const plugins: MarkdownItPlugin[] = [
 ].filter(p => !!p);
 
 function $(name: string, ...args: any[]): MarkdownItPlugin | undefined {
-    if (Config.instance.disabledPlugins.some(d => `markdown-it-${d}` === name)) {return;}
-    
+    if (Config.instance.disabledPlugins.some(d => `markdown-it-${d}` === name)) return;
     const plugin = myPlugins[name];
-    
     return plugin ? { plugin, args } : undefined;
 }

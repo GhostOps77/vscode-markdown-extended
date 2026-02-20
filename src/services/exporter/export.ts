@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import * as path from 'path';
 import * as fs from 'fs';
-import { ExportOption, ExportItem, ExportRport } from "./interfaces";
+import type { ExportOption, ExportItem, ExportRport } from "./interfaces";
 import { calculateExportPath, isSubPath } from "../common/tools";
 import { StopWatch } from '../common/stopWatch';
 

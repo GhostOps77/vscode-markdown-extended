@@ -1,5 +1,5 @@
+import type MarkdownIt from 'markdown-it';
 import * as vscode from 'vscode';
-import MarkdownIt from 'markdown-it';
 
 /**
  * Centralized extension context and state management.

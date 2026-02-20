@@ -1,4 +1,5 @@
-import { CommandConfig, Commands } from './commands';
+import type { CommandConfig } from './commands'
+import { Commands } from './commands';
 import { editTables } from '../services/table/editTables';
 import { EditType, TargetType } from '../services/table/editTable';
 

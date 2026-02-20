@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { MDTable } from './mdTable';
+import type { MDTable } from './mdTable';
 import { parseMDTAble } from './mdTableParse';
 
 export interface DocumentTable {

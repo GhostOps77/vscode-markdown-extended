@@ -1,4 +1,5 @@
-import MarkdownIt, { Token, Renderer } from "markdown-it";
+import type MarkdownIt from "markdown-it";
+import type { Token, Renderer } from "markdown-it";
 
 const
     _marker = 33 /* '!' */,

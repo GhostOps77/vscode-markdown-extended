@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import { tablesOf } from "./documentTables";
-import { EditType, getTableEdit, TargetType } from './editTable';
+import type { EditType, TargetType } from './editTable';
+import { getTableEdit } from './editTable';
 import { editTextDocument } from '../common/editTextDocument';
 
 

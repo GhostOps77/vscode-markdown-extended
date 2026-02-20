@@ -1,7 +1,8 @@
 import * as vscode from 'vscode';
 import { DocumentTable } from "./documentTables";
 import { splitColumns } from './mdTableParse';
-import { Edit, editTextDocument } from '../common/editTextDocument';
+import type { Edit } from '../common/editTextDocument';
+import { editTextDocument } from '../common/editTextDocument';
 
 export enum EditType {
     Add,

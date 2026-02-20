@@ -1,7 +1,7 @@
-import MarkdownIt from 'markdown-it';
+import type MarkdownIt from 'markdown-it';
 // Use default import for CommonJS module
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-import container = require('markdown-it-container');
+import container from 'markdown-it-container';
 
 /**
  * Markdown-it plugin wrapper for markdown-it-container with custom validation and rendering.

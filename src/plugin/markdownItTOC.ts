@@ -1,7 +1,9 @@
-import MarkdownIt, { Token } from 'markdown-it';
+import type MarkdownIt from 'markdown-it';
+import type { Token } from 'markdown-it';
+
 // Use default import for CommonJS module
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-import toc = require('markdown-it-table-of-contents');
+import toc from 'markdown-it-table-of-contents';
 import { slugify } from './shared';
 import { Config } from '../services/common/config';
 

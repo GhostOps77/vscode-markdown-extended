@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import { toggleFormat } from '../services/helpers/toggleFormat';
-import { CommandConfig, Commands } from './commands';
+import type { CommandConfig } from './commands'
+import { Commands } from './commands';
 
 const togglers: CommandConfig[] = [
     {

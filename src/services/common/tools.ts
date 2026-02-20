@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 import * as fs from 'fs';
 import { promises as fsPromises } from 'fs';
-import { ExportRport } from '../exporter/interfaces';
+import type { ExportRport } from '../exporter/interfaces';
 import { ExtensionContext } from './extensionContext';
 import { Config } from './config';
 

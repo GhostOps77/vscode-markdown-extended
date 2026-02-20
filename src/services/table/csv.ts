@@ -1,4 +1,3 @@
-
 import * as csv from 'papaparse';
 import { MDTable } from './mdTable';
 

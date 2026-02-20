@@ -1,5 +1,7 @@
-import { MDTable, TableAlign } from "./mdTable";
-import { MonoSpaceLength } from "./monospace";
+import type { MDTable } from "./mdTable"
+import { TableAlign } from "./mdTable"
+import { MonoSpaceLength } from "./monospace"
+
 export function stringifyMDTable(table: MDTable, compact?: boolean, padding?: number): string {
     padding = padding || 1;
     const rows = table.data.map((row, i) => table.indentation + stringifyRow(row, table.columnWidths, table.aligns, table.rowMergeFlags[i], compact, padding));

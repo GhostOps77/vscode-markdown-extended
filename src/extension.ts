@@ -1,21 +1,25 @@
 'use strict';
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode';
-import { CommandExportCurrent } from './commands/exportCurrent';
-import { CommandInstallBrowser } from './commands/installBrowser';
-import MarkdownIt from 'markdown-it';
-import { plugins } from './plugin/plugins';
-import { CommandCopy, CommandCopyWithStyles } from './commands/copy';
-import { Config } from './services/common/config';
-import { mdConfig } from './services/contributes/mdConfig';
-import { CommandPasteTable } from './commands/pasteTable';
-import { CommandFormateTable } from './commands/formateTable';
-import { commandToggles } from './commands/toggleFormats';
-import { commandTableEdits } from './commands/tableEdits';
-import { CommandExportWorkSpace } from './commands/exportWorkspace';
-import { ExtensionContext } from './services/common/extensionContext';
-import { BrowserManager } from './services/browser/browserManager';
+import * as vscode from 'vscode'
+import type MarkdownIt from 'markdown-it'
+
+import { CommandCopy, CommandCopyWithStyles } from './commands/copy'
+import { CommandExportCurrent } from './commands/exportCurrent'
+import { CommandExportWorkSpace } from './commands/exportWorkspace'
+import { CommandFormateTable } from './commands/formateTable'
+import { CommandInstallBrowser } from './commands/installBrowser'
+import { CommandPasteTable } from './commands/pasteTable'
+import { commandTableEdits } from './commands/tableEdits'
+import { commandToggles } from './commands/toggleFormats'
+
+import { BrowserManager } from './services/browser/browserManager'
+import { Config } from './services/common/config'
+import { ExtensionContext } from './services/common/extensionContext'
+import { mdConfig } from './services/contributes/mdConfig'
+
+import { plugins } from './plugin/plugins'
+
 
 // Deprecated: Use ExtensionContext.current.markdown instead
 // @deprecated

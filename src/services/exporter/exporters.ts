@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
-import { ExporterQuickPickItem, MarkdownExporter, ExportFormat, FormatQuickPickItem } from './interfaces';
+import type { ExporterQuickPickItem, MarkdownExporter, FormatQuickPickItem } from './interfaces';
+import { ExportFormat } from './interfaces';
 import { HtmlExporter } from './html';
 import { PuppeteerExporter } from './puppeteer';
 
