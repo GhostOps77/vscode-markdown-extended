@@ -4,7 +4,7 @@ import * as path from 'path';
 import * as vscode from 'vscode';
 import * as puppeteer from 'puppeteer';
 
-const EXTENSION_ID = 'jackdmf.markdown-extended-pro';
+const EXTENSION_ID = 'ghostops77.markdown-extended-pro';
 
 /**
  * End-to-end test for the sidenote/sidebar stylesheet as it is actually applied

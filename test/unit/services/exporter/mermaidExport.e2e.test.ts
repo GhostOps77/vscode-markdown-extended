@@ -9,7 +9,7 @@ import { BrowserManager } from '../../../../src/services/browser/browserManager'
 import { ExtensionContext } from '../../../../src/services/common/extensionContext';
 import { Config } from '../../../../src/services/common/config';
 
-const EXTENSION_ID = 'jackdmf.markdown-extended-pro';
+const EXTENSION_ID = 'ghostops77.markdown-extended-pro';
 
 /**
  * End-to-end test for the mermaid export pipeline.

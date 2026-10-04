@@ -357,7 +357,7 @@ export class ErrorHandler {
             `**Additional Information:**\n`
         );
         
-        const url = `https://github.com/JackDMF/vscode-markdown-extended/issues/new?title=${title}&body=${body}`;
+        const url = `https://github.com/GhostOps77/vscode-markdown-extended/issues/new?title=${title}&body=${body}`;
         vscode.env.openExternal(vscode.Uri.parse(url));
     }
     
