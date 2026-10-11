@@ -25,7 +25,7 @@ import { plugins } from '../../../src/plugin/plugins';
 import { HostMessage, WebviewMessage } from '../../../src/editor/protocol';
 import { ActiveVisualEditor, ActiveVisualEditorTracker, TrackedEditor, TrackedPanel, VisualEditorApi } from '../../../src/editor/host/activeEditor';
 
-const EXTENSION_ID = 'jackdmf.markdown-extended-pro';
+const EXTENSION_ID = 'ghostops77.markdown-extended-pro';
 
 /** What a requirement file looks like: front matter, an anchored id heading, prose, a table. */
 const SOURCE = [

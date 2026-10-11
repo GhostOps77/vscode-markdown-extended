@@ -9,7 +9,7 @@ import { offsetIn, snippetText } from '../../../src/editor/host/completion';
 import { SessionWebview, VisualEditorSession } from '../../../src/editor/host/session';
 import { HostMessage, WebviewMessage } from '../../../src/editor/protocol';
 
-const EXTENSION_ID = 'jackdmf.markdown-extended-pro';
+const EXTENSION_ID = 'ghostops77.markdown-extended-pro';
 
 const SOURCE = [
     '# Title',

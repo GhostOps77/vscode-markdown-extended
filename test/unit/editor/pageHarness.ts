@@ -6,7 +6,7 @@ import * as puppeteer from 'puppeteer';
 import * as vscode from 'vscode';
 import { DiagnosticEntry, HostMessage, WebviewMessage } from '../../../src/editor/protocol';
 
-export const EXTENSION_ID = 'jackdmf.markdown-extended-pro';
+export const EXTENSION_ID = 'ghostops77.markdown-extended-pro';
 
 export type EditMessage = Extract<WebviewMessage, { type: 'edit' }>;
 
